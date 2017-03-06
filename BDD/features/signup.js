@@ -24,9 +24,9 @@ module.exports = function() {
   this.Then('I should see error "$errorMessage" for "$element"', (errorMessage, element) => {
 
     Element.waitForPresence(signup[element].getElementError(), 1000);
-    expect(signup[element].getWrapper().getAttribute('class')).to.eventually.contain('is-autocheck-errored');
+    expect(signup[element].getElement().getAttribute('class')).to.eventually.contain('is-autocheck-errored');
     expect(signup[element].getElementError().isPresent()).to.eventually.equal(true);
-    
+
     return expect(signup[element].getElementError().getText()).to.eventually.equal(errorMessage);
   });
 

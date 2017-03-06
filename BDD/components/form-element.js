@@ -10,13 +10,6 @@ _.extend(FormElement.prototype, {
   },
   getElementError: function() {
     return $('.error', this.element);
-  },
-  getWrapper: function() {
-
-  	return $('#user_login');//.element(by.xpath("..")); 
-
-  	console.log($(this.element).element(by.xpath("..")));
-    return $(this.element).element(by.xpath(".."));
   }
   
 });
