@@ -1,6 +1,6 @@
 ## Introduction
 
-Simple framework test Web UI and API response, GitHub is used as an example
+Simple framework to test Web UI and API response, GitHub is used as an example
 
 
 ###To Get Started
@@ -29,13 +29,13 @@ npm test
 **BDD/components**
 Reusable classes
 
-**BDD/features **
+**BDD/features**
 As name suggested, it should have feature file (Gherkin) and step files for specific steps.
 
 **BDD/helpers**
 Reusable helper classes
 
-**BDD/pages **
+**BDD/pages**
 As name suggested
 
 **BDD/step-definitions**
