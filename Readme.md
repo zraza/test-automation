@@ -1,6 +1,6 @@
 ## Introduction
 
-Example to demonstrate test features 
+Simple framework test Web UI and API response, GitHub is used as an example
 
 
 ###To Get Started
@@ -16,11 +16,12 @@ https://nodejs.org/en/download/
 ####Run Scripts
 
 ```
-  git clone https://github.com/zraza/test-automation
-  cd test-automation
-  npm install 
+git clone https://github.com/zraza/test-automation
+cd test-automation
+npm install 
 
-  node_modules/protractor/bin/webdriver-manager update
-  npm test
+node_modules/protractor/bin/webdriver-manager update
+npm test
 
 ```
+**Note** You might to run npm with sudo
