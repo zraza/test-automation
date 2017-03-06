@@ -1,0 +1,80 @@
+[
+  {
+    "description": "API returns correct full name",
+    "assertions": [
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      }
+    ],
+    "duration": 637100501
+  },
+  {
+    "description": "API returns correct full name",
+    "assertions": [
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      }
+    ],
+    "duration": 448067101
+  },
+  {
+    "description": "API returns error for non-existing user",
+    "assertions": [
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4036930
+  },
+  {
+    "description": "Username is NOT available",
+    "assertions": [
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3298470314
+  },
+  {
+    "description": "Username is available",
+    "assertions": [
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      },
+      {
+        "passed": true
+      }
+    ],
+    "duration": 1794308766
+  }
+]

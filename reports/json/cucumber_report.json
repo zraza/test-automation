@@ -1,0 +1,280 @@
+[
+  {
+    "elements": [
+      {
+        "id": "user-endpoint;api-returns-correct-full-name",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "API returns correct full name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I make a GET request to \"/users/photobox\"",
+            "result": {
+              "status": "passed",
+              "duration": 635647535
+            },
+            "line": 4,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/step-definitions/rest.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "The response property \"name\" should be \"PhotoBox\"",
+            "result": {
+              "status": "passed",
+              "duration": 1452966
+            },
+            "line": 5,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/step-definitions/rest.js:11"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "user-endpoint;api-returns-correct-full-name",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "API returns correct full name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I make a GET request to \"/users/zraza\"",
+            "result": {
+              "status": "passed",
+              "duration": 447753843
+            },
+            "line": 4,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/step-definitions/rest.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "The response property \"name\" should be \"Zeeshan Raza\"",
+            "result": {
+              "status": "passed",
+              "duration": 313258
+            },
+            "line": 5,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/step-definitions/rest.js:11"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "user-endpoint;api-returns-error-for-non-existing-user",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "API returns error for non-existing user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I make a GET request to \"user/photoboxxxxx\"",
+            "result": {
+              "status": "passed",
+              "duration": 3932640
+            },
+            "line": 13,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/step-definitions/rest.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "The response property \"message\" should be \"Not Found\"",
+            "result": {
+              "status": "passed",
+              "duration": 104290
+            },
+            "line": 14,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/step-definitions/rest.js:11"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-endpoint",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "User Endpoint",
+    "tags": [],
+    "uri": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/features/api-user.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "user-signup;username-is-not-available",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Username is NOT available",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I am on \"/\" page",
+            "result": {
+              "status": "passed",
+              "duration": 1937370632
+            },
+            "line": 4,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/step-definitions/navigation.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click link \"Sign up\"",
+            "result": {
+              "status": "passed",
+              "duration": 681839869
+            },
+            "line": 5,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/step-definitions/actions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter \"Username\" as \"photobox\"",
+            "result": {
+              "status": "passed",
+              "duration": 551258
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/features/signup.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see \"errored\" icon for \"Username\"",
+            "result": {
+              "status": "passed",
+              "duration": 603407637
+            },
+            "line": 9,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/features/signup.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I should see error \"Username is already taken\" for \"Username\"",
+            "result": {
+              "status": "passed",
+              "duration": 75300918
+            },
+            "line": 10,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/features/signup.js:24"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "user-signup;username-is-available",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Username is available",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I am on \"/\" page",
+            "result": {
+              "status": "passed",
+              "duration": 669988248
+            },
+            "line": 4,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/step-definitions/navigation.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click link \"Sign up\"",
+            "result": {
+              "status": "passed",
+              "duration": 585063467
+            },
+            "line": 5,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/step-definitions/actions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter \"Username\" as \"photoboxxxxxx\"",
+            "result": {
+              "status": "passed",
+              "duration": 265534
+            },
+            "line": 13,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/features/signup.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see \"successful\" icon for \"Username\"",
+            "result": {
+              "status": "passed",
+              "duration": 538424539
+            },
+            "line": 14,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/features/signup.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I should NOT see error \"Username is already taken\" for \"Username\"",
+            "result": {
+              "status": "passed",
+              "duration": 566978
+            },
+            "line": 15,
+            "match": {
+              "location": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/features/signup.js:33"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-signup",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "User Signup",
+    "tags": [],
+    "uri": "/Users/zeeshanraza/data/working_folder_external/test-automation/BDD/features/signup.feature"
+  }
+]
