@@ -25,3 +25,21 @@ npm test
 
 ```
 **Note** You might to run npm with sudo
+
+**BDD/components**
+Reusable classes
+
+**BDD/features **
+As name suggested, it should have feature file (Gherkin) and step files for specific steps.
+
+**BDD/helpers**
+Reusable helper classes
+
+**BDD/pages **
+As name suggested
+
+**BDD/step-definitions**
+Generic step definitions like opening a page, loading REST data
+
+**BDD/support**
+set-up/hooks
