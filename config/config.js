@@ -1,5 +1,6 @@
 const chai = require('chai'),
-  chaiAsPromised = require('chai-as-promised');
+  chaiAsPromised = require('chai-as-promised'),
+  protractorImageComparison = require('protractor-image-comparison');
 
 chai.use(chaiAsPromised);
 
@@ -25,6 +26,12 @@ exports.config = {
   resultJsonOutputFile: './reports/json/protractor_report.json',
 
   onPrepare: function() {
+
+    browser.protractorImageComparison = new protractorImageComparison({
+      autoSaveBaseline: true,
+      baselineFolder: './baseline/',
+      screenshotPath: './.tmp/'
+    });
 
     browser.ignoreSynchronization = true;
     browser.manage().window().maximize();

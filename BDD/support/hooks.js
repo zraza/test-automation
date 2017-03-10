@@ -10,6 +10,8 @@ module.exports = function() {
   var htmlReports = process.cwd() + '/reports/html';
   var targetJson = jsonReports + '/cucumber_report.json';
 
+  this.setDefaultTimeout(50000);
+
   this.After('Successfully Applied Hooks', function(scenario, callback) {
     if (scenario.isFailed()) {
       browser.takeScreenshot().then(function(base64png) {
